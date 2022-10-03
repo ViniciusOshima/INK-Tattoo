@@ -16,10 +16,30 @@
     />
   </head>
   <body>
+    <script src="index.js"></script>
+
     <header>
-      <nav></nav>
+      <nav>
+        <img src="./img/logo-1.png" alt="logo" width="51px" height="38px" />
+        <ul>
+          <li>Explorar</li>
+          <li>Tattoo</li>
+        </ul>
+        <img src="./img/lupa.png" alt="pesquisar" width="28px" height="29px" />
+        <img
+          src="./img/hamburguer.png"
+          alt="burguer"
+          width="29.4px"
+          height="21px"
+          id="burguer"
+          onclick="burguer()"
+        />
+      </nav>
+
+      <div id="space"></div>
     </header>
     <main>
+      <div class="aba-burguer-fechado"></div>
       <section id="menu-principal">
         <div class="menu-principal-1">
           <div>
@@ -49,6 +69,7 @@
             <button>pesquisar</button>
           </div>
         </div>
+        <div class="menu-principal-2"></div>
       </section>
     </main>
   </body>

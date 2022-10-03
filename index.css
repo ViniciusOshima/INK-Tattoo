@@ -1,24 +1,113 @@
 * {
+  font-family: 'Anton';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* NAV section */
+
+nav {
+  height: 71px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+
+  padding: 0 122px;
+  position: fixed;
+  background-color: white;
+}
+
+nav ul {
+  list-style: none;
+
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #555555;
+
+  display: flex;
+  gap: 50px;
+  flex-grow: 5;
+}
+
+#space {
+  height: 71px;
+}
+
+/* burguer section */
+
+#burguer {
+  cursor: pointer;
+}
+
+#aba-burguer {
+  height: 303px;
+  width: 372px;
+  padding: 0 30px;
+
+  position: absolute;
+  left: 74.3%;
+
+  background-color: white;
+
+  transition: all 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#aba-burguer h2 {
+  font-size: 2rem;
+  color: #555555;
+  line-height: 3;
+}
+
+#aba-burguer :nth-child(1) {
+  color: black;
+}
+
+#aba-burguer :nth-child(2) {
+  border-bottom: 1px solid black;
+}
+
+.aba-burguer-fechado {
+  height: 0px;
+  width: 372px;
+
+  position: absolute;
+  left: 74.3%;
+
+  transition: all 0.5s;
+}
+
+/* menu-section */
+
 #menu-principal {
   background-image: url(./img/background-menu.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-color: #f6afb7;
   width: 100vw;
-  height: 100vh;
+  height: 92.4vh;
+
+  display: flex;
 }
 
 .menu-principal-1 {
   height: 100vh;
-  width: 608px;
+  width: 50%;
+  max-width: 600px;
 
-  margin: 0 102px;
+  margin: 0 auto;
+  padding-left: 30px;
 
   display: flex;
   flex-direction: column;
@@ -31,7 +120,7 @@
   font-family: 'Anton';
   font-style: normal;
   font-weight: 400;
-  font-size: 67px;
+  font-size: 6.7rem;
   line-height: 111.19%;
 }
 
@@ -39,7 +128,7 @@
   font-family: 'Anton';
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 2.1rem;
   line-height: 32px;
   display: flex;
   align-items: center;
@@ -69,4 +158,11 @@
 .menu-principal-1 input {
   width: 194px;
   height: 39px;
+}
+
+.menu-principal-2 {
+  height: 100vh;
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
 }
